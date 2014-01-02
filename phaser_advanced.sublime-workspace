@@ -1,0 +1,370 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"st",
+				"[pub] ● state Phaser.StateManager"
+			],
+			[
+				"sca",
+				"[pub] ● scale Phaser.StageScaleMode"
+			],
+			[
+				"dev",
+				"[pub] ● device Phaser.Device"
+			],
+			[
+				"Sp",
+				" ◆ Sprite Phaser.Sprite"
+			],
+			[
+				"Game",
+				" ◆ Game new(width: number, height: number, renderer: number, parent: string, state: Object, transparent?: boolean, antialias?: boolean) => Phaser.Game"
+			],
+			[
+				"spr",
+				"[pub] ○ spritesheet (key: string, url: string, frameWidth: number, frameHeight: number, frameMax: number): void"
+			],
+			[
+				"plat",
+				"platforms"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/Game.ts",
+			"settings":
+			{
+				"buffer_size": 477,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Boot.ts",
+			"settings":
+			{
+				"buffer_size": 704,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 59.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"INsta",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/libs/jquery.d.ts",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/js/Game.js",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/js/Boot.js",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/GruntFile.js",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/Main.ts",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/index.html",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/node_modules/grunt/internal-tasks/subgrunt.js",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/node_modules/grunt/node_modules/colors/themes/winston-dark.js",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/node_modules/grunt/node_modules/underscore.string/test/strings_standalone.js",
+		"/Users/marchaubenstock/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/package.json",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/phaser_advanced.sublime-project",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/node_modules/grunt-contrib-connect/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/test/simple/test-stream2-large-read-stall.js",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/libs/lib.d.ts",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/js/Main.js",
+		"/Users/marchaubenstock/make_typescript_project.sh",
+		"/Users/marchaubenstock/workspace/typescript/test_project/src/Main.ts",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_tutorial_02/src/game.ts",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_tutorial_02/build/index.html",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_tutorial_02/build/js/game.js",
+		"/Users/marchaubenstock/workspace/Utils/temps/index.html",
+		"/Users/marchaubenstock/workspace/Utils/temps/script.scala",
+		"/Users/marchaubenstock/workspace/Scala/create_typescript_project/create_typescript_project.scala",
+		"/Users/marchaubenstock/workspace/upload-scala/src/Upload.scala",
+		"/Users/marchaubenstock/workspace/Utils/temps/scala.sh.temp",
+		"/Users/marchaubenstock/upload.sh",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_tutorial_02/src/lib/lib.d.ts",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_tutorial_02/src/lib/phaser.d.ts",
+		"/Users/marchaubenstock/workspace/phaser_projects/phaser_tutorial_02/src/lib/phaser.d.ts",
+		"/Users/marchaubenstock/workspace/phaser_projects/phaser_tutorial_02/build/js/game.js",
+		"/Users/marchaubenstock/workspace/phaser_projects/phaser_tutorial_02/build/index.html",
+		"/Users/marchaubenstock/Library/Application Support/Sublime Text 3/Packages/T3S/README.md",
+		"/Users/marchaubenstock/workspace/phaser_projects/phaser_tutorial_02/src/phaser.d.ts",
+		"/Users/marchaubenstock/workspace/phaser_projects/phaser_tutorial_02/GruntFile.js",
+		"/Users/marchaubenstock/workspace/phaser_projects/phaser_tutorial_02/phaser_tutorial_02.sublime-project",
+		"/Users/marchaubenstock/workspace/typescript/procedural_city/src/procedural_city.ts",
+		"/Users/marchaubenstock/Library/Application Support/Sublime Text 3/Packages/TernJS/TernJS.sublime-settings",
+		"/Users/marchaubenstock/Library/Application Support/Sublime Text 3/Packages/User/TernJS.sublime-settings",
+		"/Users/marchaubenstock/workspace/phaser_projects/hellophaser/GruntFile.js",
+		"/Users/marchaubenstock/workspace/typescript/procedural_city/Gruntfile.js",
+		"/Users/marchaubenstock/workspace/typescript/procedural_city/package.json",
+		"/Users/marchaubenstock/workspace/typescript/procedural_city/procedural_city.sublime-project",
+		"/Users/marchaubenstock/workspace/typescript/procedural_city/build/src/firstPersonControls.js",
+		"/Users/marchaubenstock/workspace/typescript/procedural_city/build/src/procedural_city.html",
+		"/Users/marchaubenstock/workspace/typescript/procedural_city/build/src/procedural_city.js",
+		"/Users/marchaubenstock/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
+		"/Users/marchaubenstock/Library/Application Support/Sublime Text 3/Packages/Alignment/Default (OSX).sublime-keymap",
+		"/Users/marchaubenstock/Library/Application Support/Sublime Text 3/Packages/Alignment/Base File.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 91.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"args",
+			"GROUP",
+			"Group",
+			"Phaser.Group",
+			"GameObjectFac",
+			"GameObject",
+			"Factory",
+			"spritesheet",
+			"load",
+			"Phaser.Loader",
+			"GAME",
+			"Sublime Text License Key"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/Game.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 477,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								185,
+								185
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"extensions":
+							[
+								"ts"
+							],
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/Boot.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 704,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								217,
+								217
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"extensions":
+							[
+								"ts"
+							],
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 27.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 27.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "phaser_advanced.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 216.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
