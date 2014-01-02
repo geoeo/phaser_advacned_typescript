@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"E",
+				" ◆ Elastic Phaser.Easing.Elastic"
+			],
+			[
+				"In",
+				" ○ InOut (k: number): number"
+			],
+			[
+				"an",
+				"[pub] ● anchor Phaser.Point"
+			],
+			[
+				"lo",
+				"[pub] ● logo Phaser.Sprite"
+			],
+			[
+				"al",
+				"[pub] ● alpha number"
+			],
+			[
+				"prep",
+				"[pub] ○ prepend (...content: any[]): JQuery (+ 1 overload(s))"
+			],
+			[
+				"set",
+				"[pub] ○ setAttribute (name?: string, value?: string): void (+ 1 overload(s))"
+			],
+			[
+				"app",
+				"[pub] ○ appendChild (newChild: Node): Node (+ 1 overload(s))"
+			],
+			[
+				"onCom",
+				"[pub] ○ onCompleteCallback (callback: Function): Phaser.Tween"
+			],
+			[
+				"con",
+				"[pub] ● onComplete Phaser.Signal"
+			],
+			[
+				"pre",
+				"[pub] ● preloadBar Phaser.Sprite"
+			],
+			[
+				"spr",
+				"[pub] ○ sprite (x: number, y: number, key?: string, frame?: any): Phaser.Sprite"
+			],
+			[
+				"s",
+				" ◆ State Phaser.State"
+			],
+			[
 				"st",
 				"[pub] ● state Phaser.StateManager"
 			],
@@ -24,10 +76,6 @@
 				" ◆ Game new(width: number, height: number, renderer: number, parent: string, state: Object, transparent?: boolean, antialias?: boolean) => Phaser.Game"
 			],
 			[
-				"spr",
-				"[pub] ○ spritesheet (key: string, url: string, frameWidth: number, frameHeight: number, frameMax: number): void"
-			],
-			[
 				"plat",
 				"platforms"
 			]
@@ -39,15 +87,23 @@
 			"file": "src/Game.ts",
 			"settings":
 			{
-				"buffer_size": 477,
+				"buffer_size": 546,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/Boot.ts",
+			"file": "src/MainMenu.ts",
 			"settings":
 			{
-				"buffer_size": 704,
+				"buffer_size": 744,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build/index.html",
+			"settings":
+			{
+				"buffer_size": 540,
 				"line_ending": "Unix"
 			}
 		}
@@ -124,12 +180,17 @@
 	},
 	"file_history":
 	[
-		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/libs/jquery.d.ts",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/Preloader.ts",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/Boot.ts",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/js/Game.js",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/HtmlSetup.ts",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/js/HtmlSetup.js",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/index.html",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/js/Main.js",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/libs/jquery.d.ts",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/js/Boot.js",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/GruntFile.js",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/Main.ts",
-		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/index.html",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/node_modules/grunt/internal-tasks/subgrunt.js",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/node_modules/grunt/node_modules/colors/themes/winston-dark.js",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/node_modules/grunt/node_modules/underscore.string/test/strings_standalone.js",
@@ -138,7 +199,6 @@
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/phaser_advanced.sublime-project",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/node_modules/grunt-contrib-connect/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/test/simple/test-stream2-large-read-stall.js",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/libs/lib.d.ts",
-		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/js/Main.js",
 		"/Users/marchaubenstock/make_typescript_project.sh",
 		"/Users/marchaubenstock/workspace/typescript/test_project/src/Main.ts",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_tutorial_02/src/game.ts",
@@ -175,7 +235,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -189,6 +249,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Game",
+			"HTMLDIVELEM",
+			">\n",
+			"preloaderBar",
 			"args",
 			"GROUP",
 			"Group",
@@ -208,6 +272,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"preloadBar"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -227,15 +292,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 477,
+						"buffer_size": 546,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								185,
-								185
+								378,
+								378
 							]
 						],
 						"settings":
@@ -256,19 +321,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "src/Boot.ts",
+					"file": "src/MainMenu.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 704,
+						"buffer_size": 744,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								217,
-								217
+								687,
+								687
 							]
 						],
 						"settings":
@@ -281,10 +346,38 @@
 							"syntax": "Packages/TypeScript/TypeScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 27.0,
+						"translation.y": 129.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "build/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 540,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								211,
+								211
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -328,7 +421,7 @@
 	"project": "phaser_advanced.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 68.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -349,11 +442,11 @@
 	},
 	"select_symbol":
 	{
-		"height": 0.0,
+		"height": 400.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 709.0
 	},
 	"settings":
 	{

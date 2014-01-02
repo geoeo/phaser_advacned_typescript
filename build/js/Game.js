@@ -13,6 +13,8 @@ var Castlevania;
 
             this.state.add('Boot', Castlevania.Boot, false);
             this.state.add('Preloader', Castlevania.Preloader, false);
+            this.state.add('MainMenu', Castlevania.MainMenu, false);
+            this.state.add('Level1', Castlevania.Level1, false);
 
             this.state.start('Boot');
         }

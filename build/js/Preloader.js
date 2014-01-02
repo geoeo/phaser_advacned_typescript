@@ -18,18 +18,21 @@ var Castlevania;
 
             this.load.image("titlepage", "/assets/titlepage.jpg", false);
             this.load.image("logo", "/assets/logo.png", false);
-            this.load.image("level1", "/assets/level1.jpg", false);
+            this.load.image("level1", "/assets/level1.png", false);
             this.load.audio("music", "/assets/title.mp3", true);
 
-            this.load.spritesheet("simon", "../assets/simon.pngs", 58, 96, 5);
+            this.load.spritesheet("simon", "/assets/simon.png", 58, 96, 5);
         };
 
         Preloader.prototype.create = function () {
+            console.log("Preloader.ts - create");
             var tween = this.add.tween(this.preloadBar).to({ alpha: 0 }, 1000, Phaser.Easing.Linear.None, true);
-            tween.onCompleteCallback(this.startMainMenu);
+            tween.onComplete.add(this.startMainMenu, this);
         };
 
         Preloader.prototype.startMainMenu = function () {
+            console.log("switching to MainMenu state");
+
             this.game.state.start("MainMenu", true, false);
         };
         return Preloader;
