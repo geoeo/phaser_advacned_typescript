@@ -20,6 +20,8 @@ module Castlevania {
 			this.load.image("titlepage","/assets/titlepage.jpg",false);
 			this.load.image("logo","/assets/logo.png",false);
 			this.load.image("level1","/assets/level1.png",false);
+			this.load.image("platform","/assets/platform.png",false);
+			this.load.image("bat","/assets/bat.png",false);
 			this.load.audio("music","/assets/title.mp3",true);
 			// spritesheet for main char
 			this.load.spritesheet("simon","/assets/simon.png",58, 96, 5);
@@ -27,6 +29,7 @@ module Castlevania {
 		}
 
 		create() {
+
 			console.log("Preloader.ts - create");
 			var tween = this.add.tween(this.preloadBar).to({ alpha: 0 }, 1000, Phaser.Easing.Linear.None, true);
 			tween.onComplete.add(this.startMainMenu,this);

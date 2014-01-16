@@ -1,6 +1,7 @@
 ///<reference path='./libs/jquery.d.ts'/>
 ///<reference path='./libs/lib.d.ts'/>
 ///<reference path='./libs/phaser.d.ts'/>
+///<reference path='./Bat.ts'/>
 
 module Castlevania {
 
@@ -8,24 +9,65 @@ module Castlevania {
 
 		constructor(public background : Phaser.Sprite, 
 					public music : Phaser.Sound, 
-					public player : Castlevania.Player){
-			super()
+					public player : Phaser.Sprite,
+                    public bat : Bat,
+                    public platforms : Phaser.Group,
+                    public cursors : Phaser.CursorKeys){
+			super();
 		}
 
 		create(){
 
 			this.background = this.add.sprite(0.0,0.0,"level1");
 			this.music = this.add.audio("music",1.0,false);
-			this.music.play();
+			// this.music.play();
 
-			this.player = new Player(this.game, 130, 284);
+
+            //  Our controls.
+            this.cursors = this.game.input.keyboard.createCursorKeys();
+
+            this.platforms = this.game.add.group();
+
+            var ground : Phaser.Sprite = this.platforms.create(0.0,390,"platform");
+            // ground.alpha = 0.0;
+            ground.scale.setTo(2,2);
+            ground.body.immovable = true;
+        
+
+            var left_platform : Phaser.Sprite = this.platforms.create(0.0,200,"platform");
+            // left_platform.alpha = 0.0;
+            left_platform.scale.setTo(0.98,1);
+            left_platform.body.immovable = true;
+            left_platform.body.allowCollision.down = false;
+
+
+            var right_platform : Phaser.Sprite = this.platforms.create(495,200,"platform");
+            // right_platform.alpha = 0.0;
+            right_platform.scale.setTo(1,1);
+            right_platform.body.immovable = true;
+            right_platform.body.allowCollision.down = false;
+
+
+            this.player  = new Player(this.game, 130, 284);
+            this.bat  = new Bat(this.game,700,284);
 
 		}
 
 		update(){
 
+            //  Collide the player with the platforms
+            this.game.physics.collide(this.player, this.platforms);
+
+            // Set Sprite velocities
+
 			this.player.body.velocity.x = 0;
- 
+
+            var velocityToTarget : Phaser.Point = this.bat.getVelocityToTarget(this.player);
+
+            this.bat.body.velocity.setTo(velocityToTarget.x,velocityToTarget.y);
+
+            // Handle keyboard inputs
+
             if (this.game.input.keyboard.isDown(Phaser.Keyboard.LEFT)) {
  
                 this.player.body.velocity.x = -150;
@@ -49,8 +91,14 @@ module Castlevania {
                 this.player.animations.frame = 0;
             }
 
-		}
+            //  Allow the player to jump if they are touching the ground.
 
+            if (this.cursors.up.isDown && this.player.body.touching.down)
+            {
+                this.player.body.velocity.y = -450;
+            }
+
+		}
 
 
 	}

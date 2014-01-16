@@ -212,7 +212,7 @@ declare module Phaser {
             add(child: any): any;
             addAt(child: any, index: number): any;
             getAt(index: number): any;
-            create(x: number, y: number, key: string, frame: string, exists?: boolean): any;
+            create(x: number, y: number, key: string, frame?: string, exists?: boolean): Phaser.Sprite;
             swap(child1: any, child2: any): boolean;
             bringToTop(child: any): any;
             getIndex(child: any): number;
@@ -1095,6 +1095,7 @@ declare module Phaser {
             subtract(x: number, y: number): Phaser.Point;
             multiply(x: number, y: number): Phaser.Point;
             divide(x: number, y: number): Phaser.Point;
+            normalize():Phaser.Point;
             clampX(min: number, max: number): Phaser.Point;
             clampY(min: number, max: number): Phaser.Point;
             clamp(min: number, max: number): Phaser.Point;
