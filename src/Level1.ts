@@ -1,16 +1,18 @@
 ///<reference path='./libs/jquery.d.ts'/>
 ///<reference path='./libs/lib.d.ts'/>
 ///<reference path='./libs/phaser.d.ts'/>
-///<reference path='./Bat.ts'/>
 
-module Castlevania {
+import Bat = require('./Bat');
+import Player = require('./Player');
+
+// module Castlevania {
 
 	export class Level1 extends Phaser.State{
 
 		constructor(public background : Phaser.Sprite, 
 					public music : Phaser.Sound, 
 					public player : Phaser.Sprite,
-                    public bat : Bat,
+                    public bat : Bat.Bat,
                     public platforms : Phaser.Group,
                     public cursors : Phaser.CursorKeys){
 			super();
@@ -20,7 +22,7 @@ module Castlevania {
 
 			this.background = this.add.sprite(0.0,0.0,"level1");
 			this.music = this.add.audio("music",1.0,false);
-			// this.music.play();
+			this.music.play();
 
 
             //  Our controls.
@@ -29,27 +31,27 @@ module Castlevania {
             this.platforms = this.game.add.group();
 
             var ground : Phaser.Sprite = this.platforms.create(0.0,390,"platform");
-            // ground.alpha = 0.0;
+            ground.alpha = 0.0;
             ground.scale.setTo(2,2);
             ground.body.immovable = true;
         
 
             var left_platform : Phaser.Sprite = this.platforms.create(0.0,200,"platform");
-            // left_platform.alpha = 0.0;
+            left_platform.alpha = 0.0;
             left_platform.scale.setTo(0.98,1);
             left_platform.body.immovable = true;
             left_platform.body.allowCollision.down = false;
 
 
             var right_platform : Phaser.Sprite = this.platforms.create(495,200,"platform");
-            // right_platform.alpha = 0.0;
+            right_platform.alpha = 0.0;
             right_platform.scale.setTo(1,1);
             right_platform.body.immovable = true;
             right_platform.body.allowCollision.down = false;
 
 
-            this.player  = new Player(this.game, 130, 284);
-            this.bat  = new Bat(this.game,700,284);
+            this.player  = new Player.Player(this.game, 130, 284);
+            this.bat  = new Bat.Bat(this.game,700,284);
 
 		}
 
@@ -105,4 +107,4 @@ module Castlevania {
 
 
 
-}
+// }

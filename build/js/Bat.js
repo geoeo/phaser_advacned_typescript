@@ -4,8 +4,7 @@ var __extends = this.__extends || function (d, b) {
     __.prototype = b.prototype;
     d.prototype = new __();
 };
-var Castlevania;
-(function (Castlevania) {
+define(["require", "exports"], function(require, exports) {
     var Bat = (function (_super) {
         __extends(Bat, _super);
         function Bat(game, x, y) {
@@ -27,5 +26,5 @@ var Castlevania;
         Bat.max_velocity = 20;
         return Bat;
     })(Phaser.Sprite);
-    Castlevania.Bat = Bat;
-})(Castlevania || (Castlevania = {}));
+    exports.Bat = Bat;
+});

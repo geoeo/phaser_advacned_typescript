@@ -4,25 +4,25 @@ var __extends = this.__extends || function (d, b) {
     __.prototype = b.prototype;
     d.prototype = new __();
 };
-var Castlevania;
-(function (Castlevania) {
+define(["require", "exports", 'Boot', 'Preloader', 'MainMenu', 'Level1'], function(require, exports, Boot, Preloader, MainMenu, Level1) {
     var Game = (function (_super) {
         __extends(Game, _super);
         function Game() {
             _super.call(this, 800, 600, Phaser.AUTO, 'content', null);
 
-            this.state.add('Boot', Castlevania.Boot, false);
-            this.state.add('Preloader', Castlevania.Preloader, false);
-            this.state.add('MainMenu', Castlevania.MainMenu, false);
-            this.state.add('Level1', Castlevania.Level1, false);
+            this.state.add('Boot', Boot.Boot, false);
+            this.state.add('Preloader', Preloader.Preloader, false);
+            this.state.add('MainMenu', MainMenu.MainMenu, false);
+            this.state.add('Level1', Level1.Level1, false);
 
             this.state.start('Boot');
         }
         return Game;
     })(Phaser.Game);
-    Castlevania.Game = Game;
+    exports.Game = Game;
 
     $('document').ready(function () {
+        console.log("start game");
         new Game();
     });
-})(Castlevania || (Castlevania = {}));
+});

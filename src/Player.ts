@@ -2,8 +2,7 @@
 ///<reference path='./libs/lib.d.ts'/>
 ///<reference path='./libs/phaser.d.ts'/>
 
-module Castlevania{
-
+// module Castlevania{
 
 	export class Player extends Phaser.Sprite {
 
@@ -29,4 +28,4 @@ module Castlevania{
 
 	}
 
-}
+// }

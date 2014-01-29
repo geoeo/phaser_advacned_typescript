@@ -2,7 +2,7 @@
 ///<reference path='./libs/lib.d.ts'/>
 ///<reference path='./libs/phaser.d.ts'/>
 
-module Castlevania {
+// module Castlevania {
 
 	export class MainMenu extends Phaser.State {
 
@@ -54,4 +54,4 @@ module Castlevania {
 
 
 
-}
+// }

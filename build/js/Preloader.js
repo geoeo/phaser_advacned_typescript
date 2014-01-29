@@ -4,8 +4,7 @@ var __extends = this.__extends || function (d, b) {
     __.prototype = b.prototype;
     d.prototype = new __();
 };
-var Castlevania;
-(function (Castlevania) {
+define(["require", "exports"], function(require, exports) {
     var Preloader = (function (_super) {
         __extends(Preloader, _super);
         function Preloader(preloadBar) {
@@ -39,5 +38,5 @@ var Castlevania;
         };
         return Preloader;
     })(Phaser.State);
-    Castlevania.Preloader = Preloader;
-})(Castlevania || (Castlevania = {}));
+    exports.Preloader = Preloader;
+});

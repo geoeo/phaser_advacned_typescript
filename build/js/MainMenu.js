@@ -4,8 +4,7 @@ var __extends = this.__extends || function (d, b) {
     __.prototype = b.prototype;
     d.prototype = new __();
 };
-var Castlevania;
-(function (Castlevania) {
+define(["require", "exports"], function(require, exports) {
     var MainMenu = (function (_super) {
         __extends(MainMenu, _super);
         function MainMenu(background, logo) {
@@ -43,5 +42,5 @@ var Castlevania;
         };
         return MainMenu;
     })(Phaser.State);
-    Castlevania.MainMenu = MainMenu;
-})(Castlevania || (Castlevania = {}));
+    exports.MainMenu = MainMenu;
+});

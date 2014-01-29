@@ -4,8 +4,7 @@ var __extends = this.__extends || function (d, b) {
     __.prototype = b.prototype;
     d.prototype = new __();
 };
-var Castlevania;
-(function (Castlevania) {
+define(["require", "exports"], function(require, exports) {
     var Player = (function (_super) {
         __extends(Player, _super);
         function Player(game, x, y) {
@@ -25,5 +24,5 @@ var Castlevania;
         }
         return Player;
     })(Phaser.Sprite);
-    Castlevania.Player = Player;
-})(Castlevania || (Castlevania = {}));
+    exports.Player = Player;
+});

@@ -2,13 +2,14 @@
 ///<reference path='./libs/lib.d.ts'/>
 ///<reference path='./libs/phaser.d.ts'/>
 
-module Castlevania {
+// module Castlevania {
 
 	export class Boot extends Phaser.State {
 		
 		preload() {
 
 			this.load.image("preloadBar","/assets/loader.png");
+			console.log("Boot.preload");
 
 		}
 
@@ -44,4 +45,4 @@ module Castlevania {
 
 	}
 
-}
+// }

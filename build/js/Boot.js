@@ -4,8 +4,7 @@ var __extends = this.__extends || function (d, b) {
     __.prototype = b.prototype;
     d.prototype = new __();
 };
-var Castlevania;
-(function (Castlevania) {
+define(["require", "exports"], function(require, exports) {
     var Boot = (function (_super) {
         __extends(Boot, _super);
         function Boot() {
@@ -13,6 +12,7 @@ var Castlevania;
         }
         Boot.prototype.preload = function () {
             this.load.image("preloadBar", "/assets/loader.png");
+            console.log("Boot.preload");
         };
 
         Boot.prototype.create = function () {
@@ -37,5 +37,5 @@ var Castlevania;
         };
         return Boot;
     })(Phaser.State);
-    Castlevania.Boot = Boot;
-})(Castlevania || (Castlevania = {}));
+    exports.Boot = Boot;
+});
