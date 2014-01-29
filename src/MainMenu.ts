@@ -2,7 +2,6 @@
 ///<reference path='./libs/lib.d.ts'/>
 ///<reference path='./libs/phaser.d.ts'/>
 
-// module Castlevania {
 
 	export class MainMenu extends Phaser.State {
 
@@ -18,7 +17,6 @@
 
 			this.background = this.add.sprite(0.0,0.0,"titlepage");
 			this.background.alpha = 0;
-
 			this.logo = this.add.sprite(this.world.centerX,-300,"logo");
 			this.logo.anchor.setTo(0.5,0.5);
 
@@ -51,7 +49,3 @@
 
 
 	}
-
-
-
-// }

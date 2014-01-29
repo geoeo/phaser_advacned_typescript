@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"fun",
+				"function"
+			],
+			[
+				"d",
+				"document"
+			],
+			[
+				"re",
+				" ◇ Ready Dojo.Ready"
+			],
+			[
 				"f",
 				"file"
 			],
@@ -136,34 +148,18 @@
 	"buffers":
 	[
 		{
-			"file": "GruntFile.js",
+			"file": "build/js/HtmlSetup.js",
 			"settings":
 			{
-				"buffer_size": 1052,
+				"buffer_size": 151,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/Boot.ts",
+			"file": "src/Game.ts",
 			"settings":
 			{
-				"buffer_size": 1225,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/Level1.ts",
-			"settings":
-			{
-				"buffer_size": 3084,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "build/js/Game.js",
-			"settings":
-			{
-				"buffer_size": 920,
+				"buffer_size": 757,
 				"line_ending": "Unix"
 			}
 		}
@@ -240,24 +236,26 @@
 	},
 	"file_history":
 	[
-		"/Users/marchaubenstock/workspace/perl/externalModule.pm",
-		"/Users/marchaubenstock/workspace/perl/createFile.pl",
-		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/Player.ts",
-		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/Bat.ts",
-		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/Preloader.ts",
-		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/index.html",
-		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/Level1.ts",
-		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/libs/phaser.d.ts",
-		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/MainMenu.ts",
-		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/Boot.ts",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/Game.ts",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/js/Game.js",
-		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/HtmlSetup.ts",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/js/HtmlSetup.js",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/js/Level1.js",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/js/Preloader.js",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/index.html",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/Level1.ts",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/Boot.ts",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/js/Boot.js",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/Bat.ts",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/HtmlSetup.ts",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/Preloader.ts",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/Player.ts",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/MainMenu.ts",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/GruntFile.js",
+		"/Users/marchaubenstock/workspace/perl/externalModule.pm",
+		"/Users/marchaubenstock/workspace/perl/createFile.pl",
+		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/libs/phaser.d.ts",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/js/Main.js",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/libs/jquery.d.ts",
-		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/build/js/Boot.js",
-		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/GruntFile.js",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/src/Main.ts",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/node_modules/grunt/internal-tasks/subgrunt.js",
 		"/Users/marchaubenstock/workspace/typescript/phaser_projects/phaser_advanced/node_modules/grunt/node_modules/colors/themes/winston-dark.js",
@@ -317,6 +315,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"import Boot = require(./Boot);",
 			"class Point",
 			"Point",
 			"GROUP",
@@ -354,54 +353,52 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "GruntFile.js",
+					"file": "build/js/HtmlSetup.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1052,
+						"buffer_size": 151,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								419,
-								419
+								151,
+								151
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/Boot.ts",
+					"file": "src/Game.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1225,
+						"buffer_size": 757,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								261,
-								261
+								270,
+								270
 							]
 						],
 						"settings":
@@ -413,71 +410,6 @@
 							],
 							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 162.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/Level1.ts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3084,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1412,
-								1412
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"extensions":
-							[
-								"ts"
-							],
-							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 279.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "build/js/Game.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 920,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

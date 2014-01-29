@@ -2,8 +2,6 @@
 ///<reference path='./libs/lib.d.ts'/>
 ///<reference path='./libs/phaser.d.ts'/>
 
-// module Castlevania{
-
 	export class Bat extends Phaser.Sprite {
 
 		static max_velocity : number = 20;
@@ -29,5 +27,3 @@
 		}
 
 	}
-
-// }

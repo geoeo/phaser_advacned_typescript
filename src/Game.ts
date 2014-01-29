@@ -8,8 +8,6 @@ import Preloader = require('Preloader');
 import MainMenu = require('MainMenu');
 import Level1 = require('Level1');
 
-// module Castlevania {
-
 	export class Game extends Phaser.Game{
 
 		constructor(){
@@ -32,7 +30,6 @@ import Level1 = require('Level1');
 		new Game();
 		});
 
-// }
 
 
 

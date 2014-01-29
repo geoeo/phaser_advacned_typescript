@@ -5,8 +5,6 @@
 import Bat = require('./Bat');
 import Player = require('./Player');
 
-// module Castlevania {
-
 	export class Level1 extends Phaser.State{
 
 		constructor(public background : Phaser.Sprite, 
@@ -104,7 +102,3 @@ import Player = require('./Player');
 
 
 	}
-
-
-
-// }
