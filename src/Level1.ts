@@ -7,6 +7,10 @@ import Player = require('./Player');
 
 	export class Level1 extends Phaser.State{
 
+        // Should encapsulate this in a Score object
+        score : number = 0;
+        scoreText : Phaser.Text;
+
 		constructor(public background : Phaser.Sprite, 
 					public music : Phaser.Sound, 
 					public player : Phaser.Sprite,
@@ -51,12 +55,17 @@ import Player = require('./Player');
             this.player  = new Player.Player(this.game, 130, 284);
             this.bat  = new Bat.Bat(this.game,700,284);
 
+            this.scoreText = this.game.add.text(16, 480, 'score: 0', { fontSize: '32px', fill: '#FFF' });
+
 		}
 
 		update(){
 
             //  Collide the player with the platforms
             this.game.physics.collide(this.player, this.platforms);
+
+            // Trigger overlap handler
+            this.game.physics.overlap(this.player,this.bat,this.playerBatCollisionHandler,null,this);
 
             // Set Sprite velocities
 
@@ -67,22 +76,34 @@ import Player = require('./Player');
             this.bat.body.velocity.setTo(velocityToTarget.x,velocityToTarget.y);
 
             // Handle keyboard inputs
+            this.handleUserInput();
 
+            this.updateScore();
+        }
+
+        private updateScore(){
+
+            this.score += 1;
+            this.scoreText.content = 'score :' + this.score;
+
+        }
+
+        private handleUserInput() {
             if (this.game.input.keyboard.isDown(Phaser.Keyboard.LEFT)) {
- 
+
                 this.player.body.velocity.x = -150;
                 this.player.animations.play('walk');
- 
+
                 if (this.player.scale.x == 1) {
                     this.player.scale.x = -1;
                 }
             }
 
             else if (this.game.input.keyboard.isDown(Phaser.Keyboard.RIGHT)) {
- 
+
                 this.player.body.velocity.x = 150;
                 this.player.animations.play('walk');
- 
+
                 if (this.player.scale.x == -1) {
                     this.player.scale.x = 1;
                 }
@@ -93,12 +114,18 @@ import Player = require('./Player');
 
             //  Allow the player to jump if they are touching the ground.
 
-            if (this.cursors.up.isDown && this.player.body.touching.down)
-            {
+            if (this.cursors.up.isDown && this.player.body.touching.down) {
                 this.player.body.velocity.y = -450;
             }
+        }
 
-		}
+        private playerBatCollisionHandler(player : Player.Player, bat : Bat.Bat){
+
+            console.log('player bat collision');
+            alert("Game Over!\nYour score is: "+this.score);
+            this.game.state.start('GameOver', true,false);
+
+        }
 
 
 	}
