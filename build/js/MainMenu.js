@@ -20,7 +20,7 @@ define(["require", "exports"], function(require, exports) {
             this.logo = this.add.sprite(this.world.centerX, -300, "logo");
             this.logo.anchor.setTo(0.5, 0.5);
 
-            this.add.tween(this.background).to({ alpha: "1" }, 2000, Phaser.Easing.Linear.None(0.0), true);
+            this.add.tween(this.background).to({ alpha: 1 }, 2000, Phaser.Easing.Linear.None(0.0), true);
             this.add.tween(this.logo).to({ y: 220 }, 2000, Phaser.Easing.Elastic.Out);
 
             this.input.onDown.addOnce(this.fadeOut, this);

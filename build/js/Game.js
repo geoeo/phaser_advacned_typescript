@@ -4,7 +4,7 @@ var __extends = this.__extends || function (d, b) {
     __.prototype = b.prototype;
     d.prototype = new __();
 };
-define(["require", "exports", 'Boot', 'Preloader', 'MainMenu', 'Level1'], function(require, exports, Boot, Preloader, MainMenu, Level1) {
+define(["require", "exports", 'Boot', 'Preloader', 'MainMenu', 'Level1', 'GameOver'], function(require, exports, Boot, Preloader, MainMenu, Level1, GameOver) {
     var Game = (function (_super) {
         __extends(Game, _super);
         function Game() {
@@ -14,6 +14,7 @@ define(["require", "exports", 'Boot', 'Preloader', 'MainMenu', 'Level1'], functi
             this.state.add('Preloader', Preloader.Preloader, false);
             this.state.add('MainMenu', MainMenu.MainMenu, false);
             this.state.add('Level1', Level1.Level1, false);
+            this.state.add('GameOver', GameOver.GameOver, false);
 
             this.state.start('Boot');
         }

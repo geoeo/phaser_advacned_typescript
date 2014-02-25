@@ -15,6 +15,7 @@ define(["require", "exports", './Bat', './Player'], function(require, exports, B
             this.bat = bat;
             this.platforms = platforms;
             this.cursors = cursors;
+            this.score = 0;
         }
         Level1.prototype.create = function () {
             this.background = this.add.sprite(0.0, 0.0, "level1");
@@ -44,10 +45,14 @@ define(["require", "exports", './Bat', './Player'], function(require, exports, B
 
             this.player = new Player.Player(this.game, 130, 284);
             this.bat = new Bat.Bat(this.game, 700, 284);
+
+            this.scoreText = this.game.add.text(16, 480, 'score: 0', { fontSize: '32px', fill: '#FFF' });
         };
 
         Level1.prototype.update = function () {
             this.game.physics.collide(this.player, this.platforms);
+
+            this.game.physics.overlap(this.player, this.bat, this.playerBatCollisionHandler, null, this);
 
             this.player.body.velocity.x = 0;
 
@@ -55,6 +60,17 @@ define(["require", "exports", './Bat', './Player'], function(require, exports, B
 
             this.bat.body.velocity.setTo(velocityToTarget.x, velocityToTarget.y);
 
+            this.handleUserInput();
+
+            this.updateScore();
+        };
+
+        Level1.prototype.updateScore = function () {
+            this.score += 1;
+            this.scoreText.content = 'score :' + this.score;
+        };
+
+        Level1.prototype.handleUserInput = function () {
             if (this.game.input.keyboard.isDown(Phaser.Keyboard.LEFT)) {
                 this.player.body.velocity.x = -150;
                 this.player.animations.play('walk');
@@ -76,6 +92,12 @@ define(["require", "exports", './Bat', './Player'], function(require, exports, B
             if (this.cursors.up.isDown && this.player.body.touching.down) {
                 this.player.body.velocity.y = -450;
             }
+        };
+
+        Level1.prototype.playerBatCollisionHandler = function (player, bat) {
+            console.log('player bat collision');
+            alert("Game Over!\nYour score is: " + this.score);
+            this.game.state.start('GameOver', true, false);
         };
         return Level1;
     })(Phaser.State);

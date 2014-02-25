@@ -23,7 +23,7 @@ define(["require", "exports"], function(require, exports) {
             var difference = Phaser.Point.subtract(target.position, this.position);
             return difference.normalize().multiply(Bat.max_velocity, Bat.max_velocity);
         };
-        Bat.max_velocity = 20;
+        Bat.max_velocity = 40;
         return Bat;
     })(Phaser.Sprite);
     exports.Bat = Bat;
