@@ -4,7 +4,7 @@
 
 	export class Bat extends Phaser.Sprite {
 
-		static max_velocity : number = 20;
+		static max_velocity : number = 40;
 
 		constructor(public game : Phaser.Game, public x : number, public y : number){
 
